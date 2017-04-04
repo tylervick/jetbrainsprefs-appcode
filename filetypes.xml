@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping ext="crx" type="PLAIN_TEXT" />
+      <mapping ext="paw" type="PLAIN_TEXT" />
       <mapping ext="reg" type="PLAIN_TEXT" />
       <mapping ext="dat" type="PLAIN_TEXT" />
       <mapping pattern=".bashrc" type="Bash" />
