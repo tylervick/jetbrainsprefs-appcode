@@ -1,0 +1,42 @@
+<templateSet group="JavaScript">
+  <template name="xmlhr" value="let $XHR$ = new XMLHttpRequest();&#10;&#10;$XHR$.open('$REQUEST_TYPE$',$URL$,true);&#10;&#10;$XHR$.onload = () =&gt; {&#10;    if ($XHR$.status === 200) {&#10;        $END$&#10;    }&#10;};&#10;&#10;$XHR$.onerror = err =&gt; {&#10;    &#10;};&#10;&#10;$XHR$.send();" description="XMLHttpRequest template (async)" toReformat="true" toShortenFQNames="true">
+    <variable name="XHR" expression="" defaultValue="&quot;xhr&quot;" alwaysStopAt="true" />
+    <variable name="REQUEST_TYPE" expression="" defaultValue="&quot;GET&quot;" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="&quot;''&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log($PRINT$);" description="console.log" toReformat="true" toShortenFQNames="true">
+    <variable name="PRINT" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ael" value="addEventListener('$EVENT$',$CALLBACK$);" description="addEventListener" toReformat="true" toShortenFQNames="true">
+    <variable name="EVENT" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="reqmod" value="let $VAR$ = require('$REQUIRE$');" description="require statement" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REQUIRE" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="impmod" value="import $VAR$ from '$REQUIRE$';" description="import statement" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REQUIRE" expression="" defaultValue="VAR" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

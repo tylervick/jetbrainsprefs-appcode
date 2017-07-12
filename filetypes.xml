@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern=".zshrc" type="Bash" />
+      <mapping pattern=".bashrc" type="Bash" />
+      <mapping pattern=".osx" type="Bash" />
+      <mapping pattern=".exports" type="Bash" />
+      <mapping pattern="load-more" type="PLAIN_TEXT" />
+      <mapping ext="dat" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
